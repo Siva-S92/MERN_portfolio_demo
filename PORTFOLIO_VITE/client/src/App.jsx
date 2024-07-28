@@ -7,6 +7,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import { setPortfolioData, showLoading, hideLoading, setReloadData } from "./redux/portfolioSlice";
 import Admin from "./pages/admin/Admin";
 import Login from "./pages/admin/Login";
+import { SERVER_URL } from "./static_data/constant";
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   const getPortfolioData = async () => {
     try {
       dispatch(showLoading());
-      const response = await axios.get(`http://localhost:5000/api/portfolio/get-portfoliodata`);
+      const response = await axios.get(`${SERVER_URL}/api/portfolio/get-portfoliodata`);
       dispatch(setPortfolioData(response.data));
       dispatch(setReloadData(false));
       dispatch(hideLoading());

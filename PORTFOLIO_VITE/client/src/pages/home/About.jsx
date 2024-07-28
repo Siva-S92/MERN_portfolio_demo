@@ -17,6 +17,7 @@ function About() {
             src={lottieUrl || ''}
             background="##fff"
             speed="1"
+            loop
             autoplay
             direction="1"
             mode="normal"
@@ -24,10 +25,10 @@ function About() {
         </div>
 
         <div className="flex flex-col gap-5 w-1/2 sm:w-full">
-          <p className="text-white">
+          <p className="text-white text-justify">
             {description1 || ''}
           </p>
-          <p className="text-white">
+          <p className="text-white text-justify">
             {description2 || ''}
           </p>
         </div>

@@ -10,13 +10,13 @@ function Courses() {
   const [selectedItemIndex, setSelectedItemIndex] = useState(0);
   return (
     <div>
-      <SectionTitle title="Courses" />
+      <SectionTitle title="My&nbsp;Courses" />
       <div className="flex py-10 gap-20 sm:flex-col ">
         <div className="flex flex-col gap-10 border-l-4 sm:border-none border-[#7a898a1b] w-1/2 sm:flex-row sm:overflow-x-scroll sm:w-full">
           {courses.map((course, index) => (
             <div key={index}
               onClick={() => setSelectedItemIndex(index)}
-              className="cursor-pointer"
+              className="cursor-pointer shrink-0"
             >
               <h1
                 className={`text-xl px-5 ${
@@ -36,6 +36,8 @@ function Courses() {
             <h1 className="text-secondary text-xl">
               {courses[selectedItemIndex].title}
             </h1>
+
+            <p className="text-red-400">coming soon</p>
 
             <p className="text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa

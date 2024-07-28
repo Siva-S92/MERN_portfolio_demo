@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { useNavigate } from "react-router-dom";
+import { CLIENT_URL } from "../static_data/constant";
 
 // import Logo from "images/sv_logo.png";
 
@@ -29,16 +30,16 @@ function Header() {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="http://localhost:5173/#about">About</a>
+              <a href={`${CLIENT_URL}/#about`}>About</a>
             </li>
             <li>
-              <a href="http://localhost:5173/#project">Projects</a>
+              <a href={`${CLIENT_URL}/#project`}>Projects</a>
             </li>
             <li>
               <a href="#">Resume</a>
             </li>
             <li>
-              <a href="http://localhost:5173/#contact">Contact</a>
+              <a href={`${CLIENT_URL}/#contact`}>Contact</a>
             </li>
           </ul>
         </nav>
@@ -50,16 +51,16 @@ function Header() {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="http://localhost:5173/#about">About</a>
+                <a href={`${CLIENT_URL}/#about`}>About</a>
               </li>
               <li>
-                <a href="http://localhost:5173/#project">Projects</a>
+                <a href={`${CLIENT_URL}/#project`}>Projects</a>
               </li>
               <li>
                 <a href="#">Resume</a>
               </li>
               <li>
-                <a href="http://localhost:5173/#contact">Contact</a>
+                <a href={`${CLIENT_URL}/#contact`}>Contact</a>
               </li>
             </ul>
           </nav>

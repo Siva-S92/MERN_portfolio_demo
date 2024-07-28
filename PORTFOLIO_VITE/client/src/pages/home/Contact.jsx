@@ -15,7 +15,7 @@ function Contact() {
   return (
     <>
       <div id="contact" className="py-2">
-        <SectionTitle title="Say Hello!" />
+        <SectionTitle title="Say&nbsp;Hello!" />
         <div className="flex sm:flex-col items-center">
           <div className="flex w-1/2 sm:w-auto items-center">
             <div className="flex flex-col gap-3 text-md text-teritary">

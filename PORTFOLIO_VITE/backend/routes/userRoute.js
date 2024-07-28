@@ -17,7 +17,7 @@ router.post("/login", async (req, res)=>{
                 data: user,
                 token: token,
                 success: true,
-                message: "Login Successfully"
+                message: "Login done Successfully"
             });
         } else {
             res.status(200).send({

@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { hideLoading, showLoading } from "../../redux/portfolioSlice";
 import Header from "../../components/Header";
+import { SERVER_URL } from "../../static_data/constant";
 
 function Login() {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ function Login() {
   const login = async () => {
     try {
       dispatch(showLoading());
-      const response = await axios.post(`/api/admin/login`, user);
+      const response = await axios.post(`${SERVER_URL}/api/admin/login`, user);
       dispatch(hideLoading());
       if (response.data.success) {
         message.success(response.data.message);
@@ -36,8 +37,8 @@ function Login() {
       <div className="bg-primary h-screen py-20">
         
         <div className="w-full max-w-xl mx-auto bg-white pt-5">
-          <h1 className="text-center text-3xl font-semibold text-secondary">
-            Siva.S Admin Login
+          <h1 className="text-center text-xl font-extrabold text-gray-500">
+            Please Sign in to your account
           </h1>
           <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <div className="mb-4">
