@@ -7,6 +7,7 @@ import {
   showLoading,
 } from "../../redux/portfolioSlice";
 import axios from "axios";
+import { SERVER_URL } from "../../static_data/constant";
 
 function AdminExperience() {
   const dispatch = useDispatch();

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { hideLoading, showLoading } from "../../redux/portfolioSlice";
 import axios from "axios";
 import {message} from 'antd'
+import { SERVER_URL } from "../../static_data/constant";
 
 function AdminAbout() {
   const dispatch = useDispatch();
