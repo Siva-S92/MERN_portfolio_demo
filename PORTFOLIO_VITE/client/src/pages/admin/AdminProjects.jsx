@@ -50,7 +50,7 @@ function AdminProjects() {
   const handleDelete = async (item) => {
     try {
       dispatch(showLoading());
-      const response = await axios.post(`/api/portfolio/delete-project`, {
+      const response = await axios.post(`${SERVER_URL}/api/portfolio/delete-project`, {
         _id: item._id,
       });
       

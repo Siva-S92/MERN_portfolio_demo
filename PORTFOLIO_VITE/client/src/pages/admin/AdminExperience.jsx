@@ -28,7 +28,7 @@ function AdminExperience() {
           _id: selectedItemForEdit._id,
         });
       } else {
-        response = await axios.post(`/api/portfolio/add-experience`, values);
+        response = await axios.post(`${SERVER_URL}/api/portfolio/add-experience`, values);
       }
       
       if (response.data.success) {
@@ -48,7 +48,7 @@ function AdminExperience() {
   const handleDelete = async (item) => {
     try {
       dispatch(showLoading());
-      const response = await axios.post(`/api/portfolio/delete-experience`, {
+      const response = await axios.post(`${SERVER_URL}/api/portfolio/delete-experience`, {
         _id: item._id,
       });
       

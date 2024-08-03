@@ -28,7 +28,7 @@ function AdminCourses() {
           _id: selectedItemForEdit._id,
         });
       } else {
-        response = await axios.post(`/api/portfolio/add-course`, values);
+        response = await axios.post(`${SERVER_URL}/api/portfolio/add-course`, values);
       }
       
       if (response.data.success) {
@@ -48,7 +48,7 @@ function AdminCourses() {
   const handleDelete = async (item) => {
     try {
       dispatch(showLoading());
-      const response = await axios.post(`/api/portfolio/delete-course`, {
+      const response = await axios.post(`${SERVER_URL}/api/portfolio/delete-course`, {
         _id: item._id,
       });
       
