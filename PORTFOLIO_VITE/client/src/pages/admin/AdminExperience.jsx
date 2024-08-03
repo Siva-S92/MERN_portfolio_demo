@@ -23,7 +23,7 @@ function AdminExperience() {
       dispatch(showLoading());
       let response;
       if (selectedItemForEdit) {
-        response = await axios.post(`/api/portfolio/update-experience`, {
+        response = await axios.post(`${SERVER_URL}/api/portfolio/update-experience`, {
           ...values,
           _id: selectedItemForEdit._id,
         });

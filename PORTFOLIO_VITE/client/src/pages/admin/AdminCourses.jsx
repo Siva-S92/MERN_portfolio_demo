@@ -23,7 +23,7 @@ function AdminCourses() {
       dispatch(showLoading());
       let response;
       if (selectedItemForEdit) {
-        response = await axios.post(`/api/portfolio/update-course`, {
+        response = await axios.post(`${SERVER_URL}/api/portfolio/update-course`, {
           ...values,
           _id: selectedItemForEdit._id,
         });

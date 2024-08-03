@@ -12,7 +12,7 @@ function AdminContact() {
   const onfinish = async (values) => {
     try {
         dispatch(showLoading);
-        const response = await axios.post(`/api/portfolio/update-contact`,{
+        const response = await axios.post(`${SERVER_URL}/api/portfolio/update-contact`,{
             ...values,
             _id: portfolioData.contact._id
         });
