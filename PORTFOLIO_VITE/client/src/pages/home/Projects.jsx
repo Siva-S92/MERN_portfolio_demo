@@ -12,7 +12,7 @@ function Projects() {
     <div id="project" className="py-2 w-full">
       <SectionTitle title="Projects" />
       <div className="w-full flex py-10 gap-20 sm:flex-col ">
-        <div className="flex flex-col gap-10 justify-between border-l-4 sm:border-none border-[#7a898a1b] w-[15%] sm:flex-row sm:overflow-x-scroll sm:w-full">
+        <div className="flex flex-col gap-10 justify-between border-l-4 sm:border-none border-[#7a898a1b] w-[15%] sm:flex-row sm:overflow-x-scroll sm:w-full py-5">
           {projects.map((project, index) => (
             <div
               key={index}

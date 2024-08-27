@@ -12,7 +12,7 @@ function Experience() {
     <div>
       <SectionTitle title="Experience"/>
       <div className="flex sm:flex-col py-10 gap-20">
-        <div className="flex flex-col justify-between gap-10 border-l-4 sm:border-none border-[#7a898a1b] w-1/3 sm:flex-row sm:overflow-auto sm:w-full">
+        <div className="flex flex-col justify-between gap-10 border-l-4 sm:border-none border-[#7a898a1b] w-1/3 sm:flex-row sm:overflow-auto sm:w-full py-5">
           {experiences.map((experience, index) => (
             <div
               key={index}
