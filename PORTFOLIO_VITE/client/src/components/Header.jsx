@@ -57,7 +57,7 @@ function Header() {
                 <a href={`${CLIENT_URL}/#project`}>Projects</a>
               </li>
               <li>
-                <a href="#">Resume</a>
+                <a href={`${CLIENT_URL}/#resume`}>Resume</a>
               </li>
               <li>
                 <a href={`${CLIENT_URL}/#contact`}>Contact</a>
