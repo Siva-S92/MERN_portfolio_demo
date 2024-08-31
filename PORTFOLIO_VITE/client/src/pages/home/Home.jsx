@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Sider from "./Sider";
 import { useSelector } from "react-redux";
+import Resume from "./Resume";
 
 
 function Home() {
@@ -24,6 +25,7 @@ function Home() {
           <Experience/>
           <Projects/>
           <Courses/>
+          <Resume/>
           <Contact/>
           <Footer/>
           <Sider/>
