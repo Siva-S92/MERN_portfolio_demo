@@ -53,7 +53,7 @@ function Projects() {
 
           <div className="w-[65%] sm:w-full flex flex-col gap-5">
             <h1>
-              <span className="text-secondary text-xl">{projects[selectedItemIndex].title}&nbsp;</span><span><a href={projects[selectedItemIndex].link} target="_blank"><small className="underline underline-offset-2 text-gray-400">see the project here</small>👈</a></span>
+              <span className="text-secondary text-xl font-bold">{projects[selectedItemIndex].title}&nbsp;</span><span><button className="border rounded-full text-white bg-green-400 px-4 ml-2"><a href={projects[selectedItemIndex].link} target="_blank">view</a></button><button className="border rounded-full text-white bg-red-400 px-4 ml-2"><a href={projects[selectedItemIndex].technologies} target="_blank">source code</a></button></span>
             </h1>
             <p className="text-white">
               {projects[selectedItemIndex].description}
