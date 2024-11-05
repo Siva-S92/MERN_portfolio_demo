@@ -55,7 +55,7 @@ function Projects() {
             <h1>
               <span className="text-secondary text-xl font-bold">{projects[selectedItemIndex].title}&nbsp;</span><span><button className="border rounded-full text-white bg-green-400 px-4 ml-2"><a href={projects[selectedItemIndex].link} target="_blank">view</a></button><button className="border rounded-full text-white bg-red-400 px-4 ml-2"><a href={projects[selectedItemIndex].technologies} target="_blank">source code</a></button></span>
             </h1>
-            <p className="text-white text-justify">
+            <p className="text-white lg:text-justify">
               {projects[selectedItemIndex].description}
             </p>
             <p className="text-white text-justify">
