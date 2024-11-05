@@ -12,7 +12,7 @@ function Projects() {
     <div id="project" className="py-2 w-full">
       <SectionTitle title="Projects" />
       <div className="w-full flex py-10 gap-20 sm:flex-col ">
-        <div className="flex flex-col gap-10 justify-between border-l-4 sm:border-none border-[#7a898a1b] w-[15%] sm:flex-row sm:overflow-x-scroll sm:w-full py-5">
+        <div className="flex flex-col gap-10 justify-between border-l-4 sm:border-none border-[#7a898a1b] w-[22%] sm:flex-row sm:overflow-x-scroll sm:w-full py-5">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -32,7 +32,7 @@ function Projects() {
           ))}
         </div>
 
-        <div className="w-[85%] flex items-center justify-center gap-10 sm:flex-col sm:w-full">
+        <div className="w-[78%] flex items-center justify-center gap-10 sm:flex-col sm:w-full">
           <div className="group w-[35%] sm:w-full flex flex-col items-center relative">
             {/* <p className="text-red-500 text-xs">click on the image</p> */}
 
@@ -55,7 +55,7 @@ function Projects() {
             <h1>
               <span className="text-secondary text-xl font-bold">{projects[selectedItemIndex].title}&nbsp;</span><span><button className="border rounded-full text-white bg-green-400 px-4 ml-2"><a href={projects[selectedItemIndex].link} target="_blank">view</a></button><button className="border rounded-full text-white bg-red-400 px-4 ml-2"><a href={projects[selectedItemIndex].technologies} target="_blank">source code</a></button></span>
             </h1>
-            <p className="text-white">
+            <p className="text-white text-justify">
               {projects[selectedItemIndex].description}
             </p>
             <p className="text-white text-justify">
