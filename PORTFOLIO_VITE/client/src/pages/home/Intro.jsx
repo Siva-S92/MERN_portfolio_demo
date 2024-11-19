@@ -14,7 +14,7 @@ function Intro() {
       <h1 className="text-white text-6xl sm:text-3xl font-semibold">
         {caption || ''}
       </h1>
-      <p className="text-white text-justify w-2/3 sm:w-full">
+      <p className="text-white text-justify text-justify-inter-word leading-relaxed sm:text-sm w-2/3 sm:w-full">
         {description || ''}
       </p>
       <button className="btn border-2 border-teritary text-teritary text-2xl px-10 py-3 rounded-full">
